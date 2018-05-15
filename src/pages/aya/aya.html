@@ -1,0 +1,42 @@
+<!--
+  Generated template for the AyaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+ 
+  <div class="sdiv">
+    <audio controls autoplay src="{{audiourl}}"></audio>
+    <audio controls src="{{tafsser}}"></audio>
+      <button *ngIf="!_fileAvailable" class="btn" ion-button block (click)="downLoadFile()">تحميل ملف الشرح</button>
+      <button class="btn" ion-button block (click)="playtafser()">تسجيل ملف شرح</button>
+        
+      <button *ngIf="!_filetafsserAvailable"  class="btn" ion-button block (click)="downLoadTafsserFile()">تحميل الملف المسجل</button>
+    
+    </div>
+
+   <button ion-button block class="zoom btn" *ngIf="testsflag" (click)="exams()">الاختبارات</button>
+   <!-- <textarea [(ngModel)]="ayatext" class="par" type="text" readonly></textarea>   -->
+   <button ion-button block class="zoom btn" (click)="zoomText()">المساعد البصرى</button>
+ 
+ 
+
+
+    
+      
+
+</ion-content>
+<ion-footer>
+    <button ion-button block class="backbtn" (click)="back()">العوده</button>
+  </ion-footer>

@@ -1,0 +1,41 @@
+page-showtext {
+    .par{
+        text-align: center;
+        border: 1px dashed;
+        padding: 15px;
+        background-color: transparent;
+        font-size:30px;
+        width: 90%;
+        margin: 10px 5%;
+     
+        height: 350px;
+         
+    }
+    .surabtn{
+        margin: 20px 0;
+        height: 50px;
+        line-height: 50px;
+        text-transform: none;
+        font-size: 20px;
+    }
+    .colordiv{
+        direction: rtl;
+        margin: 15px;
+        display: flex
+    }
+    .sdiv{
+        margin: 0 10px 15px;
+    }
+    .btn{
+        height: 50px;
+        font-size: 20px;
+        background: #e0e0e0;
+        color: black;
+        font-weight: bold;
+        line-height: 50px;
+        margin: 5px 0; 
+    }
+    audio{
+        width: 100%;
+    }
+}

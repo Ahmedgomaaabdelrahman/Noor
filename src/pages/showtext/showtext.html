@@ -1,0 +1,41 @@
+<!--
+  Generated template for the ShowtextPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content [style.background-color]="backcolor" [style.color]="fontColor" [style.font-size.rem]="fontSize">
+    <ion-row style="height: 75px;text-align: center;">
+        <ion-col col-6>
+            <p class="btn" [style.font-size.rem]="fontSize"   (click)="increaseFontSize()">تكبير الخط</p>
+        </ion-col>
+        <ion-col col-6>
+            <p class="btn"  [style.font-size.rem]="fontSize" (click)="decreaseFontSize()"> تصغير الخط</p>
+          </ion-col>
+      </ion-row>
+  
+      <div class="colordiv">
+        <p style="display: inline-flex;margin: 0px;flex: 2;font-size: 20px;" [style.font-size.rem]="fontSize" > لون الخلفية</p>
+        <input type="color"  [(ngModel)]="backcolor" (onChange)="setbackcolor(back.value)">
+      </div>
+    
+      <div class="colordiv">
+        <p style="display: inline-flex;margin: 0px;flex: 2;font-size: 20px;" [style.font-size.rem]="fontSize" > لون الخط</p>
+          <input type="color" [(ngModel)]="fontColor" (onChange)="setfontolor(font.value)">
+      </div>
+    
+
+     <textarea class="par"  [(ngModel)]="ayaText"[style.font-size.rem]="fontSize" ></textarea> 
+</ion-content>
+<ion-footer>
+    <button ion-button block class="backbtn" (click)="back()">العوده</button>
+  </ion-footer>

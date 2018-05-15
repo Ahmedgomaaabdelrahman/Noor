@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+     نور
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <ion-row *ngFor="let sy of syllbes">
+   <ion-col col-12>
+      <button ion-button block (click)="getUnits(sy.syllabus_id)">{{sy.syllabus_name}}</button>  
+   </ion-col>
+ </ion-row>
+ <!-- <ion-row>
+   <ion-col col-12>
+    <p (click)="listenSura()">البحث بالسورة</p>
+  </ion-col>
+ </ion-row>
+ <ion-row>
+  <ion-col col-12>
+     <p (click)="searchGozaa()">البحث بالجزء</p>
+  </ion-col>
+</ion-row>
+<ion-row>
+    <ion-col col-12> 
+   <p (click)="allSura()">استعراض السور</p>
+ </ion-col>
+</ion-row> -->
+
+</ion-content>
+<ion-footer>
+    <button ion-button block class="backbtn" (click)="back()">الخروج من البرنامج</button>
+  </ion-footer>

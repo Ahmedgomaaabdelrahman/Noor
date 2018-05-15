@@ -1,0 +1,25 @@
+<!--
+  Generated template for the GozaaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<div>
+  <button ion-button block *ngFor="let unit of units" (click)="gotoSura(unit.syllabus_uint_id,unit.syllabus_id)">{{unit.unit_name}}</button>
+</div>
+
+
+</ion-content>
+<ion-footer>
+    <button ion-button block class="backbtn" (click)="back()">العوده</button>
+</ion-footer>

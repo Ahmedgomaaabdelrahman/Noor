@@ -1,0 +1,33 @@
+page-quesdetails {
+*{
+    direction: rtl;
+    background-color: transparent; 
+}
+ion-list{
+  margin: 10px !important;
+  background-color: transparent; 
+  .list-header{
+    background-color: transparent;  
+  }
+  .item{
+    background-color: transparent; 
+    border:none;
+    font-size: 25px;
+  }
+}
+.radio-md .radio-checked{
+  border-color:white !important;
+}
+.radio-md .radio-inner{
+  background-color:white !important;
+}
+.list-md .item-block .item-inner {
+    border-bottom: none !important;
+}
+audio{
+  width: 100%;
+}
+.item-radio-checked.item-md ion-label{
+  color:white !important;
+}
+}
